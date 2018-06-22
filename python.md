@@ -71,3 +71,10 @@ def get_file_md5(f, chunk_size=8192):
     return h.hexdigest()
 ```
 
+
+**Jupyter 打印所有 Output**
+
+```python
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+```
